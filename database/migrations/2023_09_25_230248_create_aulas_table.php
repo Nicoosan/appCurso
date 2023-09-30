@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('tituloaula');
             $table->string('urlaula');
             $table->timestamps();
-            $table->foreign('idcurso'->references('id')->on('cursos'));
+            $table->foreign('idcurso')->references('id')->on('cursos');
 
         });
     }
